@@ -50,8 +50,6 @@ const Contact = () => {
                         transition: 'background-color 0.2s ease-in-out',
                         boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
                     }}
-                // Consider adding a CSS class for :hover and :active states for better UX
-                // className="email-button"
                 >
                     Email Me: {emailAddress}
                 </a>

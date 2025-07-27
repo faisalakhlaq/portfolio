@@ -13,12 +13,22 @@ import {
     CiCd,
     JavaScript,
     TypeScript,
+    SvelteKit,
 } from './Icons';
+
+const centeredStyle = {
+    textAlign: 'center'
+}
 
 const Home = () => {
     return (
         <div className='container'>
             <section id="home" className="home-section">
+                <p style={{ ...centeredStyle, marginBottom: '2rem', fontSize: '1.1em', color: '#555' }}>
+                    "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+                    <br /><i>— Benjamin Franklin</i>
+                </p>
+
                 <div className="home-content">
 
                     <div className="home-header-row">
@@ -57,6 +67,7 @@ const Home = () => {
                             <DjangoIcon className="tech-icon" />
                             <JavaScript className="tech-icon" />
                             <TypeScript className="tech-icon" />
+                            <SvelteKit className="tech-icon" />
                             <PostgresIcon className="tech-icon" />
                             <MySQL className='tech-icon' />
                             <RedisIcon className="tech-icon" />
