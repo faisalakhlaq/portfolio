@@ -7,25 +7,17 @@ const About = () => {
     return (
         <div className='base-container'>
             <h1 style={{ textAlign: "center" }}>About me</h1>
-            <p><b>Hi!</b></p>
+            <p>Hej!</p> <br />
+            <p style={{ textAlign: "justify" }}>
+                Welcome to my portfolio. I'm Faisal Akhlaq, a Software Engineer based in Copenhagen. My journey in software development is driven by a passion for crafting robust, user-friendly applications that adhere to best practices. I thrive on bridging the gap between complex technical challenges and clear project execution, ensuring high-quality software delivery.
+            </p>
             <br />
             <p style={{ textAlign: "justify" }}>
-                Hej! I'm Faisal Akhlaq, a versatile Software Engineer based in 
-                Copenhagen, with a strong background in bridging software 
-                development and project planning to deliver robust and 
-                user-friendly software. My professional passions include 
-                developing backend services, creating real-time systems and 
-                working with modern web technologies. I am proficient in 
-                Python (Django, Flask) and have experience with 
-                JavaScript/TypeScript (SvelteKit, React), as well as 
-                relational databases like PostgreSQL and MySQL.
-
-                I have successfully developed backend services for automated 
-                production, integrated real-time machine communication using 
-                MQTT and WebSockets and built various applications from 
-                inventory tracking modules to SVG processing workflows. I am 
-                also skilled in DevOps, using tools like Docker and GitHub 
-                Actions for continuous delivery and deployment.
+                I specialize in developing backend services and real-time systems, leveraging Python (Django, Flask) and JavaScript/TypeScript (SvelteKit, React). My experience includes building automated production systems with MQTT and WebSockets, designing intricate inventory tracking modules, and implementing sophisticated SVG processing workflows. I am also adept in DevOps practices, utilizing Docker and GitHub Actions for efficient continuous delivery in diverse environments.
+            </p>
+            <br />
+            <p style={{ textAlign: "justify" }}>
+                Beyond the code, I enjoy exploring new technologies, following tech and business podcasts, and staying active with fitness and sports. I believe in continuous learning and applying new insights to deliver impactful software solutions. I'm always open to new challenges and collaborations.
             </p>
             <br />
             <h3>Experience</h3>

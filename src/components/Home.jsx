@@ -20,29 +20,34 @@ const Home = () => {
         <div className='container'>
             <section id="home" className="home-section">
                 <div className="home-content">
-                    <div className="home-text">
-                        <h1>Full-stack Developer Specializing in Scalable Systems</h1>
-                        <p className="home-description">
-                            Built complete manufacturing systems handling 50k+ daily operations.
-                            Expert in Django, Docker, and air-gapped deployments.
-                        </p>
+
+                    <div className="home-header-row">
+                        <div className="home-text-intro">
+                            <h2>Copenhagen-Based Software Engineer | Real-time & Scalable Backends</h2>
+                        </div>
+
+                        <div className="home-image-block">
+                            <img
+                                src="faisal.png"
+                                alt="Faisal Akhlaq - Software Engineer"
+                                className="profile-image"
+                                loading="lazy"
+                            />
+                            <div className="social-links">
+                                <a href="https://github.com/faisalakhlaq" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                                    <GitHubIcon className="social-icon" />
+                                </a>
+                                <a href="https://linkedin.com/in/faisalakhlaq" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                                    <LinkedInIcon className="social-icon" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="home-image">
-                        <img
-                            src="faisal.png"
-                            alt="Faisal Akhlaq"
-                            className="profile-image"
-                            loading="lazy"
-                        />
-                        <div className="social-links">
-                            <a href="https://github.com/faisalakhlaq" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                                <GitHubIcon className="social-icon" />
-                            </a>
-                            <a href="https://linkedin.com/in/faisalakhlaq" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                                <LinkedInIcon className="social-icon" />
-                            </a>
-                        </div>
+                    <div className="home-description-block">
+                        <p className="home-description">
+                            Specializing in Python (Django/Flask) and JavaScript (SvelteKit), I build robust, automated systems and real-time solutions. Proven expertise in DevOps, Docker, and delivering high-quality software in complex environments.
+                        </p>
                     </div>
 
                     <div className="tech-stack">
