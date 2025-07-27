@@ -17,6 +17,7 @@ const NavBar = () => {
                 <a className="navLink" href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a>
                 <a className="navLink" href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a>
                 <a className="navLink" href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>Experience</a>
+                <a className="navLink" href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a>
                 <a className="navLink" href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
                 <a className="navLink" href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a>
                 <a className="navLink" href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>

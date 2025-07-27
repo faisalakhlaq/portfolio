@@ -11,7 +11,8 @@ import Playground from "./Playground";
 import Weather from "./Weather";
 import TicTacToe from "./tic-tac-toe/TicTacToe";
 import Home from "./Home";
+import Education from "./Education";
 
-export {Home, PortfolioHome, About, Experience, Contact, Projects, 
+export {Home, Education, PortfolioHome, About, Experience, Contact, Projects, 
     Skills, NavBar, Footer, Playground, Todo, 
     Weather, TicTacToe };
