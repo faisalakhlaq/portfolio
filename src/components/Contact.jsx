@@ -1,41 +1,73 @@
 import React from 'react';
+import { GitHubIcon, LinkedInIcon } from './Icons';
 
-const mailIconStyle = {
-    width: '15rem',
-}
+import '../assets/home.css';
+
 const socialIconStyle = {
-    width: '2rem',
-    padding: '.3rem',
+    width: '35px',
+    height: '35px',
+    padding: '.4rem',
     borderRadius: '50%',
-}
+    margin: '0 10px',
+};
+
+const centeredStyle = {
+    textAlign: 'center',
+    margin: ".5rem"
+};
+
 const justifiedStyle = {
-    textAlign: 'justify'
-}
+    textAlign: 'justify',
+    maxWidth: '650px',
+    margin: '0 auto 25px auto',
+    lineHeight: '1.6'
+};
+
 const Contact = () => {
+    const emailAddress = "Faisal.Akhlaq@aol.com";
+
     return (
-        <div className="base-container" style={{textAlign:"center"}}>
-            <h1>Contact Me</h1>
+        <div id="contact" className="base-container" style={{ padding: "2em", backgroundColor: "#fff", borderRadius: "8px", boxShadow: "0 2px 4px rgba(0,0,0,0.1)" }}>
+            <h1 style={{ textAlign: "center", fontSize: "2.5em", marginBottom: "1em", color: "#333" }}>Get in Touch</h1>
+
             <p className="contact-me-text" style={justifiedStyle}>
-                If you are interested in working with me or just want to say hi.
-                Do you have an idea that needs a web, software for its completion?
-                Send me a message, question, suggestion. 
-                You can directly send me an email at Faisal.Akhlaq@aol.com.
+                I'm always eager to connect with fellow professionals, discuss new opportunities, or collaborate on exciting projects.
+                Whether you have a question, a project idea, or just want to say hello, please don't hesitate to reach out.
             </p>
-            <p>
-                <img  className="mail-image" style={mailIconStyle} src="mail.png"  alt={"Send Email"}/>
-            </p>
-            <p>
-                <a href="https://github.com/faisalakhlaq" target="_blank" title="Github account of Faisal" rel="noopener noreferrer">
-                    <img  style={socialIconStyle} src="github-icon.png"  alt={"Faisal Akhlaq Github"}/></a>
 
-                <a href="https://www.linkedin.com/in/faisalakhlaq/" target="_blank" title="Linkedin Profile of Faisal" rel="noopener noreferrer">
-                    <img  style={socialIconStyle} src="linkedin-icon.png"  alt={"Faisal Akhlaq LinkedIn"}/></a>
+            <div style={centeredStyle}>
+                <a
+                    href={`mailto:${emailAddress}`}
+                    style={{
+                        display: 'inline-block',
+                        padding: '14px 30px',
+                        backgroundColor: '#007bff',
+                        color: 'white',
+                        textDecoration: 'none',
+                        borderRadius: '6px',
+                        fontSize: '1.2em',
+                        fontWeight: 'bold',
+                        transition: 'background-color 0.2s ease-in-out',
+                        boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+                    }}
+                // Consider adding a CSS class for :hover and :active states for better UX
+                // className="email-button"
+                >
+                    Email Me: {emailAddress}
+                </a>
+            </div>
 
-                <a href="http://pallandri.blogspot.com/" target="_blank" title="Blog" rel="noopener noreferrer">
-                    <img  style={socialIconStyle} src="blogger-icon.png"  alt={"Faisal Akhlaq Blog"}/></a>
-            </p>
+            <div className="social-links">
+                <a href="https://github.com/faisalakhlaq" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <GitHubIcon className="social-icon" />
+                </a>
+                <a href="https://linkedin.com/in/faisalakhlaq" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <LinkedInIcon className="social-icon" />
+                </a>
+            </div>
+
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;

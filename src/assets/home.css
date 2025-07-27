@@ -75,7 +75,20 @@
 .social-links {
   display: flex;
   justify-content: center;
+  align-self: center;
   gap: 1.5rem;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  color: #4a5568;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3a86ff;
+  transform: scale(1.2);
 }
 
 /* ===== Desktop Layout ===== */

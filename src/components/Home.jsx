@@ -38,11 +38,9 @@ const Home = () => {
                         <div className="social-links">
                             <a href="https://github.com/faisalakhlaq" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon className="social-icon" />
-                                <span className="sr-only">GitHub</span>
                             </a>
                             <a href="https://linkedin.com/in/faisalakhlaq" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                                 <LinkedInIcon className="social-icon" />
-                                <span className="sr-only">LinkedIn</span>
                             </a>
                         </div>
                     </div>
