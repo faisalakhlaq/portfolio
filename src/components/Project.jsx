@@ -1,23 +1,23 @@
 import React from 'react';
+import '../assets/project.css';
 
-const imgStyle = {
-    maxWidth: '17rem',
-}
-const projectCardStyle = {
-    textAlign: 'center',
-    alignItems: 'center',
-    cursor: 'pointer',
-    margin: '2rem'
-}
-
-const Project = ({project, onClick}) => {
-    return (
-        <div style={projectCardStyle} onClick={() => onClick(project)}>
-            {project.title}
-            <br />
-            <img src={project.image} style={imgStyle} alt={project.title || "Project image"}></img>
-        </div>
-    )
-}
+const Project = ({ project, onClick }) => {
+  return (
+    <div 
+      className="project-card" 
+      onClick={() => onClick(project)}
+    >
+      <div className="project-title">{project.title}</div>
+      <div className="img-container">
+        <img 
+          src={project.image} 
+          className="project-img" 
+          alt={project.title || "Project image"}
+          loading="lazy"
+        />
+      </div>
+    </div>
+  );
+};
 
 export default Project;

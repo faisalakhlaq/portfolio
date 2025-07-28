@@ -24,9 +24,9 @@ const PortfolioHome = () => {
             <div id="skills">
                 <Skills />
             </div>
-            <div id="playground">
+            {/* <div id="playground">
                 <Playground />
-            </div>
+            </div> */}
             <div id="contact">
                 <Contact />
             </div>

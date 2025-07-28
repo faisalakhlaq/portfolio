@@ -20,10 +20,10 @@ const NavBar = () => {
                 <a className="navLink" href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a>
                 <a className="navLink" href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
                 <a className="navLink" href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a>
-                <a className="navLink" href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
-                <a className="navLink right" href="#playground" onClick={(e) => { e.preventDefault(); scrollToSection('playground'); }}>
+                <a className="navLink right" href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
+                {/* <a className="navLink right" href="#playground" onClick={(e) => { e.preventDefault(); scrollToSection('playground'); }}>
                     Playground
-                </a>
+                </a> */}
             </nav>
         </div>
     );
